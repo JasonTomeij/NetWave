@@ -43,7 +43,6 @@ graph TD
     AnnasGaheyr --> BahaKucuk
     AnnasGaheyr --> JelteKleen
     AnnasGaheyr --> VitaMeynen
-
 ```markdown
 
 
