@@ -31,8 +31,7 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 
 ### organogram
 
-```mermaid
-graph TD
+```mermaidgraph TD
     JasonTomeij["Jason Tomeij (CEO)"]
     AnnasGaheyr["Annas Gaheyr (COO)"]
     BahaKucuk["Baha Kucuk (CMO)"]
