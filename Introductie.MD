@@ -21,7 +21,7 @@ Voor in de toekomst zijn onze plannen om ons uit te breiden naar andere landen. 
 Ontwikkeling campagne:
 Het ontwikkelen van de campagne is belangrijk, wij willen door te investeren in kwalitatieve campagnes een sterke en herkenbare merkpositie opstellen in de markt.
 
-Website optimalisatie: 
+Website optimalisatie:
 Een geoptimaliseerde website is essentieel voor een sterke online aanwezigheid en een betere vindbaarheid in zoekmachines. Dit zorgt ervoor dat er je meer bezoekers op de website krijgt.
 Een investering van 10.000 tot 25.000 euro die we doen, verdient zich op lange termijn weer terug door verbeterde ranking en hogere bezoekersaantallen.
 Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons meer willen focussen op de andere marketingstrategieën die direct effect hebben.
@@ -31,18 +31,7 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 
 ### organogram
 
-```mermaidgraph TD
-    JasonTomeij["Jason Tomeij (CEO)"]
-    AnnasGaheyr["Annas Gaheyr (COO)"]
-    BahaKucuk["Baha Kucuk (CMO)"]
-    JelteKleen["Jelte Kleen (CFO)"]
-    VitaMeynen["Vita Meynen (CHRO)"]
-
-    JasonTomeij --> AnnasGaheyr
-    AnnasGaheyr --> BahaKucuk
-    AnnasGaheyr --> JelteKleen
-    AnnasGaheyr --> VitaMeynen
-```markdown
+....
 
 ### Stakeholder analyse
 
