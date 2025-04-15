@@ -33,16 +33,18 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 
 ```mermaid
 graph TD
-    JasonTomeij["Jason Tomeij<br/>CEO"]
-    AnnasGaheyr["Annas Gaheyr<br/>COO"]
-    BahaKucuk["Baha Kucuk<br/>CMO"]
-    JelteKleen["Jelte Kleen<br/>CFO"]
-    VitaMeynen["Vita Meynen<br/>CHRO"]
+    JasonTomeij["Jason Tomeij (CEO)"]
+    AnnasGaheyr["Annas Gaheyr (COO)"]
+    BahaKucuk["Baha Kucuk (CMO)"]
+    JelteKleen["Jelte Kleen (CFO)"]
+    VitaMeynen["Vita Meynen (CHRO)"]
 
     JasonTomeij --> AnnasGaheyr
-    JasonTomeij --> BahaKucuk
-    JasonTomeij --> JelteKleen
-    JasonTomeij --> VitaMeynen
+    AnnasGaheyr --> BahaKucuk
+    AnnasGaheyr --> JelteKleen
+    AnnasGaheyr --> VitaMeynen
+
+```markdown
 
 
 ### Stakeholder analyse
