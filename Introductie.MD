@@ -46,4 +46,89 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 
 ### Stakeholder analyse
 
+....
+
+## Actoren in NetWave
+
+De applicatie genaamd _**Wave**_ is een innovatieve applicatie gemaakt door NetWave om de klantervaring en klantloyaliteit te verbeteren en te versterken. Hieronder zie je wie de applicatie allemaal zullen gebruiken en de bijbehorende functies ervan:
+
+---
+
+### 1. Klant (de gebruiker van de app)
+- Registreert zijn of haar telefoon door een QR-code te scannen of serienummer in te vullen.
+- Krijgt een overzicht van al zijn/haar apparaten.
+- Ontvangt meldingen als er iets belangrijks gebeurt (zoals een update of garantie die afloopt).
+- Kan handleidingen en video's bekijken over hoe dingen werken.
+- Kan vragen stellen aan een slimme chatbot of chatten met echte medewerkers.
+- Meldt een probleem of schade via de app.
+- Krijgt persoonlijke aanbiedingen en kortingen.
+- Doet mee aan de community: vragen stellen, antwoorden geven en tips delen.
+- Maakt afspraken bij een winkel of servicepunt in de buurt.
+- Past de instellingen aan zoals taal, meldingen of app-thema.
+
+---
+
+### 2. Klantenservice medewerker
+- Antwoordt op live chats van klanten.
+- Belt klanten terug op een gewenst moment.
+- Kijkt naar problemen en helpt met reparaties.
+- Controleert meldingen en geeft updates.
+- Houdt de community netjes en helpt bij vragen.
+
+---
+
+### 3. Contentbeheerder / Marketeer
+- Maakt handleidingen, video's en nieuwsberichten in de app.
+- Zorgt voor acties, aanbiedingen en tips voor klanten.
+- Past de teksten aan voor verschillende talen en landen.
+- Zet spelletjes en beloningen in de app (zoals badges).
+- Kijkt naar wat klanten doen en passen acties daarop aan.
+
+---
+
+### 4. Appbeheerder / Technisch team
+- Houdt de app veilig en snel.
+- Zorgt dat alles goed werkt en er geen fouten zijn.
+- Zorgt voor updates en nieuwe functies.
+- Regelt koppelingen met andere systemen (zoals klantenbestand of voorraad).
+
+---
+
+### 5. Andere systemen die meewerken
+- **ERP-systeem**: weet wat op voorraad is en hoelang de garantie duurt.
+- **CRM-systeem**: houdt klantgegevens bij.
+- **BI-systeem**: bekijkt wat klanten doen en wat beter kan.
+- **Chatbot-systeem**: helpt klanten automatisch.
+- **Notificatiesysteem**: stuurt meldingen naar gebruikers.
+- **Kaart-systeem**: laat zien waar de dichtstbijzijnde winkels zijn.
+
+---
+
+### 6. Productmanager / Analist
+- Kijkt wat klanten willen en gebruiken.
+- Bedenkt wat er nieuw moet komen in de app.
+- Werkt samen met andere teams om de app te verbeteren.
+
+---
+
+### 7. Ontwikkelaar (de bouwers van de app)
+- Bouwen de app en zorgen dat die werkt op elke telefoon.
+- Maken nieuwe functies als dat nodig is.
+- Repareren fouten en zorgen dat de app veilig is.
+
+---
+
+### 8. Bonusrol: Loyalty manager (extra rol, als je een beloningssysteem hebt)
+- Regelt punten, kortingen of cadeaus voor trouwe klanten.
+- Werkt samen met andere bedrijven voor speciale acties.
+
+---
+
+Aan de hand van de toegeweze rollen kan NetWave en de bijbehorende actoren ervoor zorgen dat de applicatie _**Wave**_  veilig is voor de gebruikers tegen een cybersecurity inbraak en fijn is om te gebruiken. 
+
+## Bedrijfsproces analyse
+
+## Product visie
+
+
 
