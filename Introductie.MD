@@ -197,16 +197,82 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 ## UML klassendiagram
 
-Klasse | Belangrijke Attributen | Relaties
-Gebruiker | gebruikerID, naam, e-mail, wachtwoord, taalvoorkeur | Heeft meerdere producten, afspraken en chatgesprekken
-Product | productID, merk, model, serienummer, aankoopdatum | Hoort bij één gebruiker, heeft één garantie, meerdere handleidingen, reparatieverzoeken en aanbevelingen
-Garantie | garantieID, startdatum, einddatum, voorwaarden | Hoort bij één product
-Handleiding | handleidingID, titel, inhoud, taal | Hoort bij één product
-Reparatieverzoek | verzoekID, datum, status, beschrijving | Hoort bij één product
-Chatgesprek | gesprekID, starttijd, eindtijd, type (AI of live) | Hoort bij één gebruiker
-Aanbeveling | aanbevelingID, type, inhoud | Hoort bij één product
-Winkel | winkelID, naam, adres, contactgegevens | Heeft meerdere afspraken
-Afspraak | afspraakID, datum, tijd, type (reparatie, advies, workshop) | Hoort bij één gebruiker en één winkel
+```mermaid
+classDiagram
+    class Gebruiker {
+        +int gebruikerID
+        +string naam
+        +string email
+        +string wachtwoord
+        +string taalvoorkeur
+    }
+
+    class Product {
+        +int productID
+        +string merk
+        +string model
+        +string serienummer
+        +date aankoopdatum
+    }
+
+    class Garantie {
+        +int garantieID
+        +date startdatum
+        +date einddatum
+        +string voorwaarden
+    }
+
+    class Handleiding {
+        +int handleidingID
+        +string titel
+        +string inhoud
+        +string taal
+    }
+
+    class Reparatieverzoek {
+        +int verzoekID
+        +date datum
+        +string status
+        +string beschrijving
+    }
+
+    class Chatgesprek {
+        +int gesprekID
+        +datetime starttijd
+        +datetime eindtijd
+        +string type
+    }
+
+    class Aanbeveling {
+        +int aanbevelingID
+        +string type
+        +string inhoud
+    }
+
+    class Winkel {
+        +int winkelID
+        +string naam
+        +string adres
+        +string contactgegevens
+    }
+
+    class Afspraak {
+        +int afspraakID
+        +date datum
+        +time tijd
+        +string type
+    }
+
+    Gebruiker --> "1" Product : registreert >
+    Product --> "1" Garantie
+    Product --> "*" Handleiding
+    Product --> "*" Reparatieverzoek
+    Product --> "*" Aanbeveling
+    Gebruiker --> "*" Chatgesprek
+    Gebruiker --> "*" Afspraak
+    Winkel --> "*" Afspraak
+```
+
 
 ## Sitemap
 
