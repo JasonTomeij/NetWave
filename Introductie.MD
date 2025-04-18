@@ -191,9 +191,96 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 ## Product visie
 
+
+
 ## Domeinmodel
 
 ## UML klassendiagram
+
+Klasse | Attributen | Relaties
+Gebruiker | 
+
+gebruikerID<br>- naam<br>- e-mail<br>- wachtwoord<br>- taalvoorkeur
+
+ | 
+
+Heeft meerdere Producten<br>- Heeft meerdere Afspraken<br>- Heeft meerdere Chatgesprekken
+
+
+Product | 
+
+productID<br>- merk<br>- model<br>- serienummer<br>- aankoopdatum
+
+ | 
+
+Behoort tot één Gebruiker<br>- Heeft één Garantie<br>- Heeft meerdere Handleidingen<br>- Heeft meerdere Reparatieverzoeken<br>- Heeft meerdere Aanbevelingen
+
+
+Garantie | 
+
+garantieID<br>- startdatum<br>- einddatum<br>- voorwaarden
+
+ | 
+
+Behoort tot één Product
+
+
+Handleiding | 
+
+handleidingID<br>- titel<br>- inhoud<br>- taal
+
+ | 
+
+Behoort tot één Product
+
+
+Reparatieverzoek | 
+
+verzoekID<br>- datum<br>- status<br>- beschrijving
+
+ | 
+
+Behoort tot één Product
+
+
+Chatgesprek | 
+
+gesprekID<br>- starttijd<br>- eindtijd<br>- type (AI of live)
+
+ | 
+
+Behoort tot één Gebruiker
+
+
+Aanbeveling | 
+
+aanbevelingID<br>- type<br>- inhoud
+
+ | 
+
+Behoort tot één Product
+
+
+Winkel | 
+
+winkelID<br>- naam<br>- adres<br>- contactgegevens
+
+ | 
+
+Heeft meerdere Afspraken
+
+
+Afspraak | 
+
+afspraakID<br>- datum<br>- tijd<br>- type (reparatie, advies, workshop)
+
+ | 
+
+Behoort tot één Gebruiker<br>- Behoort tot één Winkel
+
+
+
+## Sitemap
 
 *is een apart document. Ga naar respitory bij document en daar tussenin zie je Sitemap.png bestand*
 
