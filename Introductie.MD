@@ -154,6 +154,16 @@ Aan de hand van de toegeweze rollen kan NetWave en de bijbehorende actoren ervoo
 
 ## Bedrijfsproces analyse
 
+### Ist situatie: 
+
+* Klanten gebruiken verschillende kanalen voor ondersteuning, informatie en services.
+
+* Beperkte integratie tussen systemen leidt tot inconsistente klantgegevens.
+
+* Handmatige processen voor garantieclaims en reparaties zijn tijdrovend en foutgevoelig.
+
+* Gebrek aan gepersonaliseerde communicatie en aanbiedingen.
+
 ## Product visie
 
 ## Domeinmodel
