@@ -154,7 +154,7 @@ Aan de hand van de toegeweze rollen kan NetWave en de bijbehorende actoren ervoo
 
 ## Bedrijfsproces analyse
 
-### Ist situatie: 
+### Ist situatie(Huidige situatie): 
 
 * Klanten gebruiken verschillende kanalen voor ondersteuning, informatie en services.
 
@@ -163,6 +163,30 @@ Aan de hand van de toegeweze rollen kan NetWave en de bijbehorende actoren ervoo
 * Handmatige processen voor garantieclaims en reparaties zijn tijdrovend en foutgevoelig.
 
 * Gebrek aan gepersonaliseerde communicatie en aanbiedingen.
+
+### Soll situatie(gewenste situatie):
+
+* Een geïntegreerde mobiele applicatie die als centraal platform dient voor alle klantinteracties.
+
+* Automatisering van processen zoals registratie, garantieclaims en updates.
+
+* Realtijd synchronisatie met ERP-, CRM- en BI-systemen voor consistente en actuele informatie.
+
+* Gepersonaliseerde ervaringen door gebruik van AI en klantgegevens.
+
+### Knelpunten
+
+De knelpunten waarmee we kampen zijn het volgende:
+
+* We zijn erg afhankelijk van meerdere afdelingen en systemen bij het regristreren van gegevens
+* Het erg lastig en complex is om gegevens te beschermen op het gebied van beveiliging en het waarbogren van en voldoen aan de privacy wetregelgeving
+* Ten slotte kunnen klanten minder interesse hebben in het nieuwe platform, omdat ze zich niet willen aanpassen eraan.
+
+### Gapp analyse(Het verschil)
+
+Uit de gap-analyse blijkt dat er een grote verschil blijkt tussen de ist en soll situatie op de volgende gebieden: klantenservice, communicatie, informatievoorziening, de betrokkenheid en data-analyse. Het blijkt zo te zijn dat in het huidige proces veel dingen handmatig worden gedaan en niet goed samenhangend zijn. Dit leidt tot problemen zoals dat processen inefficiënt verlopen, wat als gevolgd de klanttevredenheid kan benadelen. 
+
+Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat ervoor zorgt dat de processen gecentraliseerd en geautomiseerd worden. DIt zal de ineffecienties verhelpen en ervoor zorgen dat het gehele proces meer samenhangend is met elkaar. Om dit te bereiken moet er geïnvesteerd worden in technologie, training voor de bijbehorende actoren en dat het management aangepast worden voor het gewenste sitatie. Dit zal er naar leiden dat de bijbehorende actoren zowel op de technologische als op de vlakken van menselijke kant, zoals vaardigheden en kennis goed toegepast kunnen worden. 
 
 ## Product visie
 
