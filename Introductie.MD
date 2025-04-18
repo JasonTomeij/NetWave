@@ -88,34 +88,35 @@ De applicatie genaamd _**Wave**_ is een innovatieve applicatie gemaakt door NetW
 - Kan vragen stellen aan een slimme chatbot of chatten met echte medewerkers.
 - Meldt een probleem of schade via de app.
 - Krijgt persoonlijke aanbiedingen en kortingen.
-- Doet mee aan de community: vragen stellen, antwoorden geven en tips delen.
-- Maakt afspraken bij een winkel of servicepunt in de buurt.
-- Past de instellingen aan zoals taal, meldingen of app-thema.
+- Doet mee aan de community: vragen stellen, antwoorden geven en reviews achterlaten.
+- Maakt afspraken bij een winkel of servicepunt in de buurt voor elke situatie. 
+- Past de instellingen aan zoals taal, meldingen of app-thema, zodta het gewenster is voor de klant en het de klanttevredenheid bevordert. 
 
 ---
 
 ### 2. Klantenservice medewerker
 - Antwoordt op live chats van klanten.
-- Belt klanten terug op een gewenst moment.
-- Kijkt naar problemen en helpt met reparaties.
+- Belt klanten terug op een gewenst moment of indien nodig op afspraak. 
+- Kijkt naar problemen voor de klant en helpt met reparaties.
 - Controleert meldingen en geeft updates.
 - Houdt de community netjes en helpt bij vragen.
+- Registreert het in het systeem. 
 
 ---
 
 ### 3. Contentbeheerder / Marketeer
-- Maakt handleidingen, video's en nieuwsberichten in de app.
-- Zorgt voor acties, aanbiedingen en tips voor klanten.
-- Past de teksten aan voor verschillende talen en landen.
-- Zet spelletjes en beloningen in de app (zoals badges).
-- Kijkt naar wat klanten doen en passen acties daarop aan.
+- Maakt handleidingen, video's en nieuwsberichten in de app(Wave), zodat het aantrekkelijker wordt voor de klant. 
+- Zorgt voor acties, aanbiedingen en tips voor klanten, want dit trekt klanten aan en houdt ze tevreden. 
+- Past de teksten aan voor verschillende talen en landen, zodat het ook daadwerkelijk voor iedereen beschikt is en niemand wordt buitengesloten. 
+- Zet spelletjes en beloningen in de app (zoals achievements), om de klanten te amuseren en ze op zo'n wijze meer gebruik te laten maken van de App (Wave)
+- Kijkt naar wat klanten doen en passen acties daarop aan, aan de hand van een algoritme wat wel bekende social media's al heel lang toepassen. 
 
 ---
 
 ### 4. Appbeheerder / Technisch team
-- Houdt de app veilig en snel.
+- Houdt de app veilig en snel. De veiligheid zorgt ervoor dat we voldoen aan wetten en niet juridisch in de problemen komen. 
 - Zorgt dat alles goed werkt en er geen fouten zijn.
-- Zorgt voor updates en nieuwe functies.
+- Zorgt voor updates en nieuwe functies, om het innovatief te houden en ervoor te zorgen dat bijvoorbeeld privacy inbrekingen amper voor komen. 
 - Regelt koppelingen met andere systemen (zoals klantenbestand of voorraad).
 
 ---
@@ -131,7 +132,7 @@ De applicatie genaamd _**Wave**_ is een innovatieve applicatie gemaakt door NetW
 ---
 
 ### 6. Productmanager / Analist
-- Kijkt wat klanten willen en gebruiken.
+- Kijkt wat klanten willen en gebruiken en dat ook mededelen met de appbeheerder en ontwikkelaar. 
 - Bedenkt wat er nieuw moet komen in de app.
 - Werkt samen met andere teams om de app te verbeteren.
 
