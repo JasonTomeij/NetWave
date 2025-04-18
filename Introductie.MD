@@ -29,13 +29,50 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 
 ### Doelstellingen
 
-### organogram
+### organogram(Actoren bij NetWave)
 
-....
+```mermaid
+graph TD
+    RvC(Raad van Commissarissen)
+    RvC --> PV(PhoneVentures)
+    PV --> Bedrijven(Individuele bedrijven)
+    PV --> Projectteam(Projectteam Appontwikkeling)
 
-### Stakeholder analyse
+    Projectteam --> Ontwikkelaars
+    Projectteam --> UXUI(UX/UI Designers)
+    Projectteam --> Testers
+    Projectteam --> PO(Product Owner / Projectmanager)
 
-....
+    Projectteam --> Systemen
+    Systemen --> ERP(ERP-systeem)
+    Systemen --> CRM(CRM-systeem)
+    Systemen --> BI(BI-tool)
+
+    PV --> Marketing(Marketingteam)
+    PV --> Support(Klantenservice)
+
+    Bedrijven --> Klanten(Klanten / Eindgebruikers)
+    Klanten --> Community
+    Klanten --> Beta(Betatesters)
+
+    Klanten --> Reparaties(Reparatieservicepartners)
+    Klanten --> Chatbot(AI Chatbot)
+
+
+### Stakeholderanalyse - Applicatie van NetWave
+
+| Stakeholder               | Type      | Belang / Doel                                                         | Invloed |
+|--------------------------|-----------|------------------------------------------------------------------------|---------|
+| Raad van Commissarissen  | Intern    | Initiatiefnemer. Wil klantloyaliteit en innovatie stimuleren          | Hoog    |
+| PhoneVentures Management | Intern    | Stuurt het project aan en bewaakt bedrijfsbelangen                    | Hoog    |
+| IT/Projectteam           | Intern    | Verantwoordelijk voor ontwerp, bouw en testen van de app              | Hoog    |
+| Product Owners           | Intern    | Bepalen de functionele inhoud en prioriteiten                         | Hoog    |
+| Marketingteam            | Intern    | Zorgt voor promotie, aanbiedingen en klantcommunicatie                | Middel  |
+| Klantenservice           | Intern    | Wordt ondersteund/vervangen door chatbot en selfservicefuncties       | Middel  |
+| Klanten / Gebruikers     | Extern    | Verwachten gebruiksgemak, informatie en service via één platform      | Hoog    |
+| Reparatieservicepartners| Extern    | Behandelen meldingen, reparaties en updates                           | Laag    |
+| Leveranciers van API’s  | Extern    | Leveren data, updates, vertalingen, etc.                              | Middel  |
+
 
 ## Actoren in NetWave
 
