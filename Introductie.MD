@@ -156,5 +156,15 @@ Aan de hand van de toegeweze rollen kan NetWave en de bijbehorende actoren ervoo
 
 ## Product visie
 
+## Domeinmodel
+
+## UML klassendiagram
+
+*is een apart document. Ga naar respitory bij document en daar tussenin zie je Sitemap.png bestand*
+
+## Wireframes
+
+
+
 
 
