@@ -197,88 +197,16 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 ## UML klassendiagram
 
-Klasse | Attributen | Relaties
-Gebruiker | 
-
-gebruikerID<br>- naam<br>- e-mail<br>- wachtwoord<br>- taalvoorkeur
-
- | 
-
-Heeft meerdere Producten<br>- Heeft meerdere Afspraken<br>- Heeft meerdere Chatgesprekken
-
-
-Product | 
-
-productID<br>- merk<br>- model<br>- serienummer<br>- aankoopdatum
-
- | 
-
-Behoort tot één Gebruiker<br>- Heeft één Garantie<br>- Heeft meerdere Handleidingen<br>- Heeft meerdere Reparatieverzoeken<br>- Heeft meerdere Aanbevelingen
-
-
-Garantie | 
-
-garantieID<br>- startdatum<br>- einddatum<br>- voorwaarden
-
- | 
-
-Behoort tot één Product
-
-
-Handleiding | 
-
-handleidingID<br>- titel<br>- inhoud<br>- taal
-
- | 
-
-Behoort tot één Product
-
-
-Reparatieverzoek | 
-
-verzoekID<br>- datum<br>- status<br>- beschrijving
-
- | 
-
-Behoort tot één Product
-
-
-Chatgesprek | 
-
-gesprekID<br>- starttijd<br>- eindtijd<br>- type (AI of live)
-
- | 
-
-Behoort tot één Gebruiker
-
-
-Aanbeveling | 
-
-aanbevelingID<br>- type<br>- inhoud
-
- | 
-
-Behoort tot één Product
-
-
-Winkel | 
-
-winkelID<br>- naam<br>- adres<br>- contactgegevens
-
- | 
-
-Heeft meerdere Afspraken
-
-
-Afspraak | 
-
-afspraakID<br>- datum<br>- tijd<br>- type (reparatie, advies, workshop)
-
- | 
-
-Behoort tot één Gebruiker<br>- Behoort tot één Winkel
-
-
+Klasse | Belangrijke Attributen | Relaties
+Gebruiker | gebruikerID, naam, e-mail, wachtwoord, taalvoorkeur | Heeft meerdere producten, afspraken en chatgesprekken
+Product | productID, merk, model, serienummer, aankoopdatum | Hoort bij één gebruiker, heeft één garantie, meerdere handleidingen, reparatieverzoeken en aanbevelingen
+Garantie | garantieID, startdatum, einddatum, voorwaarden | Hoort bij één product
+Handleiding | handleidingID, titel, inhoud, taal | Hoort bij één product
+Reparatieverzoek | verzoekID, datum, status, beschrijving | Hoort bij één product
+Chatgesprek | gesprekID, starttijd, eindtijd, type (AI of live) | Hoort bij één gebruiker
+Aanbeveling | aanbevelingID, type, inhoud | Hoort bij één product
+Winkel | winkelID, naam, adres, contactgegevens | Heeft meerdere afspraken
+Afspraak | afspraakID, datum, tijd, type (reparatie, advies, workshop) | Hoort bij één gebruiker en één winkel
 
 ## Sitemap
 
