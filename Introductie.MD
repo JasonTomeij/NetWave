@@ -194,6 +194,161 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 
 ## Domeinmodel
+```mermaid
+erDiagram
+
+    GEBRUIKER ||--o{ PRODUCT : registreert
+    PRODUCT ||--|| GARANTIE : heeft
+    PRODUCT ||--o{ HANDLEIDING : heeft
+    PRODUCT ||--o{ SOFTWARE_UPDATE : krijgt
+    GEBRUIKER ||--o{ CHATGESPREK : voert
+    GEBRUIKER ||--o{ REPARATIEVERZOEK : meldt
+    REPARATIEVERZOEK }o--|| PRODUCT : betreft
+    GEBRUIKER ||--o{ AANBEVELING : ontvangt
+    AANBEVELING }o--|| PRODUCT : gerelateerd_aan
+    GEBRUIKER ||--o{ AFSPRAAK : maakt
+    AFSPRAAK }o--|| WINKEL : vindt_plaats_bij
+    GEBRUIKER ||--|| VOORKEUR : heeft
+    GEBRUIKER ||--o{ COMMUNITY_POST : plaatst
+    COMMUNITY_POST ||--o{ REACTIE : heeft
+    GEBRUIKER ||--o{ FEEDBACK : geeft
+    GEBRUIKER ||--|| ACCOUNTINSTELLINGEN : heeft
+    GEBRUIKER ||--|| NOTIFICATIEINSTELLINGEN : beheert
+    SOFTWARE_UPDATE ||--o{ BETA_PROGRAMMA : onderdeel_van
+    APP ||--|| ERP_SYSTEEM : synchroniseert_met
+    APP ||--|| CRM_SYSTEEM : synchroniseert_met
+    APP ||--|| BI_TOOL : analyseert_met
+
+    GEBRUIKER {
+        int gebruikerID
+        string naam
+        string email
+        string wachtwoord
+        string taal
+    }
+
+    PRODUCT {
+        int productID
+        string merk
+        string model
+        string serienummer
+        date aankoopdatum
+    }
+
+    GARANTIE {
+        int garantieID
+        date startdatum
+        date einddatum
+        string voorwaarden
+    }
+
+    HANDLEIDING {
+        int handleidingID
+        string titel
+        string taal
+        text inhoud
+    }
+
+    SOFTWARE_UPDATE {
+        int updateID
+        string versie
+        string inhoud
+        date releasedatum
+    }
+
+    BETA_PROGRAMMA {
+        int betaID
+        string beschrijving
+        date startdatum
+    }
+
+    CHATGESPREK {
+        int gesprekID
+        datetime starttijd
+        datetime eindtijd
+        string type
+    }
+
+    REPARATIEVERZOEK {
+        int verzoekID
+        date datum
+        string status
+        string beschrijving
+    }
+
+    AANBEVELING {
+        int aanbevelingID
+        string type
+        string inhoud
+    }
+
+    WINKEL {
+        int winkelID
+        string naam
+        string adres
+        string contactgegevens
+    }
+
+    AFSPRAAK {
+        int afspraakID
+        date datum
+        time tijd
+        string type
+    }
+
+    COMMUNITY_POST {
+        int postID
+        string inhoud
+        datetime datum
+    }
+
+    REACTIE {
+        int reactieID
+        string inhoud
+        datetime datum
+    }
+
+    FEEDBACK {
+        int feedbackID
+        string type
+        string inhoud
+    }
+
+    VOORKEUR {
+        string promotie_type
+        string communicatievoorkeur
+        string taal
+    }
+
+    ACCOUNTINSTELLINGEN {
+        string thema
+        string layout
+        bool 2FA_enabled
+    }
+
+    NOTIFICATIEINSTELLINGEN {
+        bool updates
+        bool promoties
+        bool community
+        string niet_storen_periode
+    }
+
+    ERP_SYSTEEM {
+        string naam
+    }
+
+    CRM_SYSTEEM {
+        string naam
+    }
+
+    BI_TOOL {
+        string naam
+    }
+
+    APP {
+        string appNaam
+    }
+```
 
 ## UML klassendiagram
 
