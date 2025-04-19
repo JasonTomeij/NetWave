@@ -73,7 +73,7 @@ graph TD
 | Reparatieservicepartners| Extern    | Behandelen meldingen, reparaties en updates                           | Laag    |
 | Leveranciers van API’s  | Extern    | Leveren data, updates, vertalingen, etc.                              | Middel  |
 
-```
+
 ## Actoren in NetWave
 
 De applicatie genaamd _**Wave**_ is een innovatieve applicatie gemaakt door NetWave om de klantervaring en klantloyaliteit te verbeteren en te versterken. Hieronder zie je wie de applicatie allemaal zullen gebruiken en de bijbehorende functies ervan:
