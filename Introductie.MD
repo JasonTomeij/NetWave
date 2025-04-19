@@ -481,8 +481,6 @@ classDiagram
 
 ## Sitemap
 
-## 🗺️ Sitemap - NetWave App
-
 ```mermaid
 graph TD
     A[Home / Dashboard] --> B[Productregistratie]
