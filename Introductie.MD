@@ -97,12 +97,12 @@ De applicatie genaamd _**Wave**_ is een innovatieve applicatie gemaakt door NetW
 ---
 
 ### 2. Klantenservice medewerker
-- Antwoordt op live chats van klanten.
+- Antwoordt op live chats van klanten in een kleine window rechts onderin of indien nodig een fullscreen. 
 - Belt klanten terug op een gewenst moment of indien nodig op afspraak. 
 - Kijkt naar problemen voor de klant en helpt met reparaties.
 - Controleert meldingen en geeft updates.
-- Houdt de community netjes en helpt bij vragen.
-- Registreert het in het systeem. 
+- Houdt de community netjes en helpt bij vragen, want dat helpt met klanten tevredenheid en loyaliteit. 
+- Registreert automatisch het in het systeem, zodat het altijd in de event log teruggevonden kan worden op basis van een case id, tijdstip, actie etc. 
 
 ---
 
