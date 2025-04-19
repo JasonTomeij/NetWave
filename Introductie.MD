@@ -57,7 +57,7 @@ graph TD
 
     Klanten --> Reparaties(Reparatieservicepartners)
     Klanten --> Chatbot(AI Chatbot)
-
+```
 
 ### Stakeholderanalyse - Applicatie van NetWave
 
