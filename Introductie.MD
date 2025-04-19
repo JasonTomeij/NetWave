@@ -194,7 +194,7 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 
 ## Domeinmodel
-### 📘 Domeinmodel PhoneVentures App
+
 
 ```mermaid
 erDiagram
