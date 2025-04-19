@@ -29,6 +29,8 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 
 ### Doelstellingen
 
+**_..............................._**
+
 ### organogram(Actoren bij NetWave)
 
 ```mermaid
@@ -38,15 +40,15 @@ graph TD
     PV --> Bedrijven(Individuele bedrijven)
     PV --> Projectteam(Projectteam Appontwikkeling)
 
-    Projectteam --> Ontwikkelaars
-    Projectteam --> UXUI(UX/UI Designers)
-    Projectteam --> Testers
+    Projectteam --> Ontwikkelaars(Developing team in principe, die de app WAVE ontwikkelen.)
+    Projectteam --> UXUI(UX/UI Designers, voor de opmaak en layout. )
+    Projectteam --> Testers(testen of de applicatie naar behoren werkt.)
     Projectteam --> PO(Product Owner / Projectmanager)
 
     Projectteam --> Systemen
-    Systemen --> ERP(ERP-systeem)
-    Systemen --> CRM(CRM-systeem)
-    Systemen --> BI(BI-tool)
+    Systemen --> ERP(ERP-systeem, dat gekoppeld is met Odoo)
+    Systemen --> CRM(CRM-systeem, dat gekoppeld is met Odoo)
+    Systemen --> BI(De BI-tool, zet alle data om in het geautomiseerde proces om in bruikbare data dat achter de schermen verwerkt kunnen worden. )
 
     PV --> Marketing(Marketingteam)
     PV --> Support(Klantenservice)
@@ -56,7 +58,7 @@ graph TD
     Klanten --> Beta(Betatesters)
 
     Klanten --> Reparaties(Reparatieservicepartners)
-    Klanten --> Chatbot(AI Chatbot)
+    Klanten --> Chatbot(zodat klanten sneller geholpen kunnen worden met simpele problemen. )
 ```
 
 ### Stakeholderanalyse - Applicatie van NetWave
@@ -145,7 +147,7 @@ De applicatie genaamd _**Wave**_ is een innovatieve applicatie gemaakt door NetW
 
 ---
 
-### 8. Bonusrol: Loyalty manager (extra rol, als je een beloningssysteem hebt)
+### 8. Extra rol: Loyalty manager (extra rol, voor het beloningsysteem die NetWave wilt toepassen in Wave)
 - Regelt punten, kortingen of cadeaus voor trouwe klanten.
 - Werkt samen met andere bedrijven voor speciale acties.
 
