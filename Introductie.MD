@@ -194,6 +194,7 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 
 ## Domeinmodel
+### 📘 Domeinmodel PhoneVentures App
 
 ```mermaid
 erDiagram
@@ -397,6 +398,86 @@ erDiagram
         string taal
     }
 ```
+
+
+## Uml-klassendiagram
+
+```mermaid
+classDiagram
+    class Gebruiker {
+        +int gebruikerID
+        +string naam
+        +string email
+        +string wachtwoord
+        +string taalvoorkeur
+    }
+
+    class Product {
+        +int productID
+        +string merk
+        +string model
+        +string serienummer
+        +date aankoopdatum
+    }
+
+    class Garantie {
+        +int garantieID
+        +date startdatum
+        +date einddatum
+        +string voorwaarden
+    }
+
+    class Handleiding {
+        +int handleidingID
+        +string titel
+        +string inhoud
+        +string taal
+    }
+
+    class Reparatieverzoek {
+        +int verzoekID
+        +date datum
+        +string status
+        +string beschrijving
+    }
+
+    class Chatgesprek {
+        +int gesprekID
+        +datetime starttijd
+        +datetime eindtijd
+        +string type
+    }
+
+    class Aanbeveling {
+        +int aanbevelingID
+        +string type
+        +string inhoud
+    }
+
+    class Winkel {
+        +int winkelID
+        +string naam
+        +string adres
+        +string contactgegevens
+    }
+
+    class Afspraak {
+        +int afspraakID
+        +date datum
+        +time tijd
+        +string type
+    }
+
+    Gebruiker --> "1" Product : registreert >
+    Product --> "1" Garantie
+    Product --> "*" Handleiding
+    Product --> "*" Reparatieverzoek
+    Product --> "*" Aanbeveling
+    Gebruiker --> "*" Chatgesprek
+    Gebruiker --> "*" Afspraak
+    Winkel --> "*" Afspraak
+```
+
 
 ## Sitemap
 
