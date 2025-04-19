@@ -194,37 +194,47 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 
 ## Domeinmodel
+
 ```mermaid
 erDiagram
+    KLANT ||--o{ PRODUCT : registreert
+    KLANT ||--o{ GARANTIE : heeft
+    KLANT ||--o{ REPARATIE : meldt
+    KLANT ||--o{ FEEDBACK : geeft
+    KLANT ||--o{ COMMUNITY_POST : schrijft
+    KLANT ||--o{ CHATGESPREK : start
+    KLANT ||--o{ INSTELLING : heeft
+    KLANT ||--o{ NOTIFICATIE : ontvangt
+    KLANT ||--o{ TAALOPTIE : gebruikt
 
-    GEBRUIKER ||--o{ PRODUCT : registreert
-    PRODUCT ||--|| GARANTIE : heeft
-    PRODUCT ||--o{ HANDLEIDING : heeft
-    PRODUCT ||--o{ SOFTWARE_UPDATE : krijgt
-    GEBRUIKER ||--o{ CHATGESPREK : voert
-    GEBRUIKER ||--o{ REPARATIEVERZOEK : meldt
-    REPARATIEVERZOEK }o--|| PRODUCT : betreft
-    GEBRUIKER ||--o{ AANBEVELING : ontvangt
-    AANBEVELING }o--|| PRODUCT : gerelateerd_aan
-    GEBRUIKER ||--o{ AFSPRAAK : maakt
-    AFSPRAAK }o--|| WINKEL : vindt_plaats_bij
-    GEBRUIKER ||--|| VOORKEUR : heeft
-    GEBRUIKER ||--o{ COMMUNITY_POST : plaatst
-    COMMUNITY_POST ||--o{ REACTIE : heeft
-    GEBRUIKER ||--o{ FEEDBACK : geeft
-    GEBRUIKER ||--|| ACCOUNTINSTELLINGEN : heeft
-    GEBRUIKER ||--|| NOTIFICATIEINSTELLINGEN : beheert
-    SOFTWARE_UPDATE ||--o{ BETA_PROGRAMMA : onderdeel_van
-    APP ||--|| ERP_SYSTEEM : synchroniseert_met
-    APP ||--|| CRM_SYSTEEM : synchroniseert_met
-    APP ||--|| BI_TOOL : analyseert_met
+    PRODUCT ||--|{ HANDLEIDING : bevat
+    PRODUCT ||--|{ TUTORIAL : bevat
+    PRODUCT ||--o{ SOFTWARE_UPDATE : ontvangt
+    PRODUCT ||--o{ AANBEVELING : krijgt
 
-    GEBRUIKER {
-        int gebruikerID
+    GARANTIE }|--|| VERLENGING : heeft_optie_op
+    GARANTIE }|--|| VERZEKERING : heeft_optie_op
+
+    REPARATIE ||--|{ TRACKING : heeft
+    REPARATIE ||--o{ MEDIA_UPLOAD : bevat
+
+    CHATGESPREK ||--o{ CHATBERICHT : bevat
+    CHATGESPREK ||--o{ MEDEWERKER : met
+
+    COMMUNITY_POST ||--|{ REACTIE : heeft
+    COMMUNITY_POST ||--o{ BADGE : verdient
+
+    AANBEVELING ||--|| ACCESSOIRE : betreft
+
+    LOCATIE ||--o{ WINKEL : heeft
+    LOCATIE ||--o{ SERVICECENTRUM : heeft
+
+    KLANT {
+        int klantID
         string naam
         string email
         string wachtwoord
-        string taal
+        date geboortedatum
     }
 
     PRODUCT {
@@ -232,14 +242,26 @@ erDiagram
         string merk
         string model
         string serienummer
+        string IMEI
         date aankoopdatum
+        string softwareversie
     }
 
     GARANTIE {
         int garantieID
         date startdatum
         date einddatum
-        string voorwaarden
+    }
+
+    VERLENGING {
+        int verlengingID
+        date nieuweEinddatum
+    }
+
+    VERZEKERING {
+        int verzekeringID
+        string type
+        float premie
     }
 
     HANDLEIDING {
@@ -249,185 +271,132 @@ erDiagram
         text inhoud
     }
 
+    TUTORIAL {
+        int tutorialID
+        string titel
+        string videolink
+        string taal
+    }
+
     SOFTWARE_UPDATE {
         int updateID
         string versie
-        string inhoud
+        string changelog
         date releasedatum
     }
 
-    BETA_PROGRAMMA {
-        int betaID
-        string beschrijving
-        date startdatum
+    REPARATIE {
+        int reparatieID
+        string status
+        date meldingDatum
+        string probleemomschrijving
+    }
+
+    MEDIA_UPLOAD {
+        int uploadID
+        string bestandstype
+        string bestandslocatie
+    }
+
+    TRACKING {
+        int trackingID
+        string status
+        date updateDatum
+        string opmerking
     }
 
     CHATGESPREK {
         int gesprekID
         datetime starttijd
-        datetime eindtijd
-        string type
     }
 
-    REPARATIEVERZOEK {
-        int verzoekID
-        date datum
-        string status
-        string beschrijving
-    }
-
-    AANBEVELING {
-        int aanbevelingID
-        string type
+    CHATBERICHT {
+        int berichtID
+        datetime verzendtijd
         string inhoud
     }
 
-    WINKEL {
-        int winkelID
+    MEDEWERKER {
+        int medewerkerID
         string naam
-        string adres
-        string contactgegevens
+        string afdeling
     }
 
-    AFSPRAAK {
-        int afspraakID
-        date datum
-        time tijd
-        string type
+    FEEDBACK {
+        int feedbackID
+        int score
+        text opmerking
     }
 
     COMMUNITY_POST {
         int postID
-        string inhoud
+        string titel
+        text inhoud
         datetime datum
     }
 
     REACTIE {
         int reactieID
-        string inhoud
+        text inhoud
         datetime datum
     }
 
-    FEEDBACK {
-        int feedbackID
-        string type
-        string inhoud
+    BADGE {
+        int badgeID
+        string naam
+        string omschrijving
     }
 
-    VOORKEUR {
-        string promotie_type
-        string communicatievoorkeur
+    AANBEVELING {
+        int aanbevelingID
+        string type
+        string promotietekst
+    }
+
+    ACCESSOIRE {
+        int accessoireID
+        string naam
+        string beschrijving
+        float prijs
+    }
+
+    LOCATIE {
+        int locatieID
+        string stad
+        string adres
+    }
+
+    WINKEL {
+        int winkelID
+        string naam
+        string openingstijden
+    }
+
+    SERVICECENTRUM {
+        int centrumID
+        string naam
+        string openingstijden
+    }
+
+    INSTELLING {
+        int instellingID
+        bool notificatiesAan
+        string thema
+        bool donkereMode
+    }
+
+    NOTIFICATIE {
+        int notificatieID
+        string titel
+        string inhoud
+        datetime verzondenOp
+    }
+
+    TAALOPTIE {
+        int taalID
         string taal
     }
-
-    ACCOUNTINSTELLINGEN {
-        string thema
-        string layout
-        bool 2FA_enabled
-    }
-
-    NOTIFICATIEINSTELLINGEN {
-        bool updates
-        bool promoties
-        bool community
-        string niet_storen_periode
-    }
-
-    ERP_SYSTEEM {
-        string naam
-    }
-
-    CRM_SYSTEEM {
-        string naam
-    }
-
-    BI_TOOL {
-        string naam
-    }
-
-    APP {
-        string appNaam
-    }
 ```
-
-## UML klassendiagram
-
-```mermaid
-classDiagram
-    class Gebruiker {
-        +int gebruikerID
-        +string naam
-        +string email
-        +string wachtwoord
-        +string taalvoorkeur
-    }
-
-    class Product {
-        +int productID
-        +string merk
-        +string model
-        +string serienummer
-        +date aankoopdatum
-    }
-
-    class Garantie {
-        +int garantieID
-        +date startdatum
-        +date einddatum
-        +string voorwaarden
-    }
-
-    class Handleiding {
-        +int handleidingID
-        +string titel
-        +string inhoud
-        +string taal
-    }
-
-    class Reparatieverzoek {
-        +int verzoekID
-        +date datum
-        +string status
-        +string beschrijving
-    }
-
-    class Chatgesprek {
-        +int gesprekID
-        +datetime starttijd
-        +datetime eindtijd
-        +string type
-    }
-
-    class Aanbeveling {
-        +int aanbevelingID
-        +string type
-        +string inhoud
-    }
-
-    class Winkel {
-        +int winkelID
-        +string naam
-        +string adres
-        +string contactgegevens
-    }
-
-    class Afspraak {
-        +int afspraakID
-        +date datum
-        +time tijd
-        +string type
-    }
-
-    Gebruiker --> "1" Product : registreert >
-    Product --> "1" Garantie
-    Product --> "*" Handleiding
-    Product --> "*" Reparatieverzoek
-    Product --> "*" Aanbeveling
-    Gebruiker --> "*" Chatgesprek
-    Gebruiker --> "*" Afspraak
-    Winkel --> "*" Afspraak
-```
-
 
 ## Sitemap
 
