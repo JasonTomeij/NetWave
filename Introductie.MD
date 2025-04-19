@@ -34,7 +34,7 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 ```mermaid
 graph TD
     RvC(Raad van Commissarissen)
-    RvC --> PV(PhoneVentures)
+    RvC --> PV(NetWave)
     PV --> Bedrijven(Individuele bedrijven)
     PV --> Projectteam(Projectteam Appontwikkeling)
 
