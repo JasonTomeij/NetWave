@@ -124,7 +124,7 @@ De applicatie genaamd _**Wave**_ is een innovatieve applicatie gemaakt door NetW
 ### 5. Andere systemen die meewerken
 - **ERP-systeem**: weet wat op voorraad is en hoelang de garantie duurt.
 - **CRM-systeem**: houdt klantgegevens bij.
-- **BI-systeem**: bekijkt wat klanten doen en wat beter kan.
+- **BI-systeem**: bekijkt wat klanten doen en wat beter kan.(geeft inzicht in de klantgegevens)
 - **Chatbot-systeem**: helpt klanten automatisch.
 - **Notificatiesysteem**: stuurt meldingen naar gebruikers.
 - **Kaart-systeem**: laat zien waar de dichtstbijzijnde winkels zijn.
