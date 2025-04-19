@@ -481,59 +481,7 @@ classDiagram
 
 ## Sitemap
 
-```mermaid
-graph TD
-    A[Home / Dashboard] --> B[Productregistratie]
-    A --> C[Mijn Producten]
-    C --> C1[Productdetails]
-    C1 --> C1a[Garantie & Verzekering]
-    C1 --> C1b[Softwareversies]
-    C1 --> C1c[Specificaties]
 
-    A --> D[Updates & Notificaties]
-    D --> D1[Pushberichten]
-    D --> D2[Beta-updates]
-    
-    A --> E[Handleidingen & Tutorials]
-    E --> E1[Zoekfunctie]
-    E --> E2[Interactieve Video's]
-    E --> E3[Tips & Tricks]
-
-    A --> F[Garantie & Reparatie]
-    F --> F1[Reparatie aanvragen]
-    F --> F2[Foto's / Video upload]
-    F --> F3[Status tracking]
-
-    A --> G[AI Chatbot & Live Support]
-    G --> G1[AI Chatbot (24/7)]
-    G --> G2[Live Chat]
-    G --> G3[Terugbelfunctie]
-
-    A --> H[Communityforum]
-    H --> H1[Vragen & Antwoorden]
-    H --> H2[Tips delen]
-    H --> H3[Badges & Rankings]
-
-    A --> I[Aanbiedingen & Aanbevelingen]
-    I --> I1[Accessoires]
-    I --> I2[Exclusieve kortingen]
-    I --> I3[Productlanceringen]
-
-    A --> J[Winkelzoeker & Afspraken]
-    J --> J1[Zoek op locatie]
-    J --> J2[Afspraken maken]
-    J --> J3[Evenementen]
-
-    A --> K[Instellingen]
-    K --> K1[Privacy-instellingen]
-    K --> K2[Notificatievoorkeuren]
-    K --> K3[Taal & Thema]
-
-    A --> L[Account]
-    L --> L1[Profiel]
-    L --> L2[Communicatievoorkeuren]
-    L --> L3[Feedback & Reviews]
-```
 
 ## Wireframes
 
