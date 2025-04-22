@@ -481,7 +481,7 @@ classDiagram
 ```
 
 
-[Download de nieuwe Sitemap planning PDF](./path/to/Sitemap%20planning.pdf)
+[Download de nieuwe Sitemap planning PDF](./Sitemap%20planning.pdf)
 
 
 
