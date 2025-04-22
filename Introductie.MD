@@ -481,7 +481,7 @@ classDiagram
 ```
 
 
-<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/a2108129-c6ad-45da-b8a4-452ed3281a1d" id="9lZ.Q.TyVxU3"></iframe></div>
+
 
 
 ## Wireframes
