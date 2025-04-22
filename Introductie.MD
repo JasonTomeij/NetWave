@@ -481,8 +481,29 @@ classDiagram
 ```
 
 
-## Sitemap
+# Sitemap - App "NetWave"
 
+## Home / Dashboard
+- Apparaten
+- Onderhoud
+- Support
+  - Handleidingen & Video's
+  - LiveChat / AI Chatbot
+  - Meld een probleem
+  - Reparatie Aanvragen
+- Aanbiedingen
+  - Jouw NetBonus
+  - Loyalty points
+- FAQ
+  - Veelgestelde vragen
+  - Reviews
+- Instellingen
+  - Taal
+  - Meldingen
+  - Lightmode / Darkmode
+- Maak nu een afspraak
+  - Servicepunt Zoeken
+  - Afspraak Plannen
 
 
 ## Wireframes
