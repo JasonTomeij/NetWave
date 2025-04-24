@@ -199,6 +199,43 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 ## Product visie
 
+## 📌 Product Vision Board
+
+### 🎯 Vision
+Ervoor zorgen dat de Netwave telefoon de meest vertrouwde en kwalitatief meest gekozen telefoon wordt.
+
+### 👥 Target Group
+- Volwassenen  
+- Jongvolwassenen
+
+### 💡 Needs
+- Hoog in kwaliteit  
+- Duurzaam
+
+### 📱 Product
+- Netwave telefoon  
+- Netwave oortjes
+
+### 🎯 Business Goals
+- Het product is gericht op duurzaamheid  
+- Meer kwaliteit dan merk
+
+### 🏁 Competitors
+- Andere telefoonbedrijven  
+- Groter omzet - Betere marktpositie  
+- Minder gefocust op kwaliteit
+
+### 💰 Revenue Streams
+- Juiste doelgroep kiezen  
+- Klanttevredenheid opbouwen
+
+### 💸 Cost Factors
+- Marketing op sociale netwerken  
+- Inkoop van de telefoons
+
+### 🛍️ Channels
+- Winkels in verschillende landen  
+- Op onze webshop
 
 
 ## Domeinmodel
