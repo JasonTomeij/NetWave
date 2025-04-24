@@ -199,9 +199,7 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 ## Product visie
 
-## 📌 Product Vision Board
-
-[Download de Product Vision Board (PDF)](Documenten/Foto's/Product-Vision-Board.pdf)
+Documenten/Foto's/product-vision-board.png
 
 
 ## Domeinmodel
