@@ -199,8 +199,8 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 ## Product visie
 
-Documenten/Foto's/product-vision-board.png
 
+![Product Vision Board](./assets/product-vision-board.png)
 
 ## Domeinmodel
 
