@@ -29,7 +29,13 @@ Op dit moment kiezen wij ervoor om dit nog niet te doen. Dat komt omdat we ons m
 
 ### Doelstellingen
 
-**_..............................._**
+De doestellingen van NetWave zijn vrij groot. Wij hebben korte termijn doelstellingen en ook voor het lange termijn. 
+Voor het korte termijn wilt NetWave zo snel mogelijk de best mogelijk kwaliteit verkoppen. Dit gaan wij doen door veel geld te investeren in de research van kwaliteit. Zodat wij straks de beste kwaliteit hebben. Naast dat wij zo snel mogelijk de beste in de kwaliteit willen zijn. Is dat wij veel vestigingen gaan openen en zoveel mogelijk landen. Zodat NetWave internationaal groeit en we steeds bekender worden. het is daarom ook niet belangrijk voor NetWave om gelijk de beste te zijn.
+
+Voor de lange termijn doelen hebben we een paar hele belangrijke de eerste is wel dat we natuurlijk binnen de top 3 telefoons zullen staan en met het oog voor de eerste plek natuurlijk. Dit kan ons aardig wat jaar duren omdat wij ons eerst echt focussen op het kleine zodat we daarna met winst die we draaien steeds meer kunnen riskeren. En daarmee proberen groot te worden. 
+
+Ons tweede lange termijn doel is om de meeste omzet te krijgen binnen alle bedrijven. Wij willen het meeste verkopen en ook de meeste winst van iedereen te hebben. Hierdoor kunnen wij meer investeren en dus ook verder focussen op de andere doelen. 
+Bij ons derde lange termijn doel is dat wij altijd genoeg mensen bij ons laten werken en dat we niet mensen moeten inhuren. Dit klinkt als een korte termijn doekl maar omdat we een foute keuzen hebben gemaakt loopt NetWave nu eigenlijk achter de feiten aan en moeten we dus veel mensen extern huren. Dit willen wij in de loop van jaren verbeteren en eigenlijk zelfs op 0 mensen extern houden. 
 
 ### organogram(Actoren bij NetWave)
 
