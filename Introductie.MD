@@ -495,6 +495,13 @@ classDiagram
 ## Wireframes
 
 [wireframe1](figma1.png)
+[wireframe2](figma2.png)
+[wireframe3](figma3.png)
+[wireframe4](figma4.png)
+[wireframe5](figma6.png)
+[wireframe6](figma7.png)
+[wireframe7](figma8.png)
+[wireframe8](figma9.png)
 
 
 
