@@ -502,6 +502,10 @@ classDiagram
 [wireframe6](figma7.png)
 [wireframe7](figma8.png)
 [wireframe8](figma9.png)
+[wireframe9](figma10.png)
+[wireframe10](figma11.png)
+[wireframe11](figma12.png)
+[wireframe12](figma13.png)
 
 
 
