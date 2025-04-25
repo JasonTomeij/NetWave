@@ -494,7 +494,7 @@ classDiagram
 
 ## Wireframes
 
-
+[wireframe1](figma1.png)
 
 
 
