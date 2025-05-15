@@ -491,7 +491,7 @@ classDiagram
 [Download de nieuwe Sitemap planning PDF](./Sitemap%20planning.pdf)
 
 
-
+[Download de Wireframes](./NetWave.pdf)
 ## Wireframes
 
 [wireframe1](figma1.png)
