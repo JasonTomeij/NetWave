@@ -608,7 +608,7 @@ graph TD
     %% Onderhoud sectie
     E --> E1[Reparatie-status]
 
----
+
 
 ```
 ## Wireframes
