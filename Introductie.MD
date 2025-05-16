@@ -613,7 +613,7 @@ graph TD
     %% Instellingen sectie
     F --> F1[Taal]
     F --> F2[Meldingen]
-    F2 --> F3[Lightmode / Darkmode]
+    F --> F3[Lightmode / Darkmode]
 
 
 
