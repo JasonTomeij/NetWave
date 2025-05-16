@@ -579,6 +579,7 @@ classDiagram
 ```
 
 ### Sitemap
+Dit is de sitemap van NetWave
 
 ```mermaid
 graph TD
