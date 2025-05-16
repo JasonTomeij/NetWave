@@ -250,6 +250,7 @@ Ook hebben we een online webshop waar de telefoons verkocht worden.
 
 ## Domeinmodel
 
+
 ```mermaid
 classDiagram
     class Klant {
@@ -331,6 +332,16 @@ classDiagram
         --
         +updateStatus()
         +voegTrackingToe()
+    }
+
+    class Retourneren {
+        +int retourID
+        +date retourDatum
+        +string reden
+        +string status
+        --
+        +verwerkRetour()
+        +beoordeelRetour()
     }
 
     class Chatgesprek {
@@ -473,11 +484,9 @@ classDiagram
     Product --> Garantie : heeft
     Product --> Reparatie : heeft
     Product --> Verzekering : heeft
-    Product --> retourneren : optie
+    Product --> Retourneren : kan worden geretourneerd
 
     Garantie --> Verlenging : optie op
-
-    Reparatie --> Tracking : bevat
 
     Chatgesprek --> Chatbericht : bevat
     Chatgesprek --> Medewerker : met
