@@ -250,7 +250,7 @@ Ook hebben we een online webshop waar de telefoons verkocht worden.
 
 ## Domeinmodel
 
-```mermaid
+mermaid
 erDiagram
     KLANT ||--o{ PRODUCT : registreert
     KLANT ||--o{ GARANTIE : heeft
@@ -263,7 +263,6 @@ erDiagram
     KLANT ||--o{ TAALOPTIE : gebruikt
 
     PRODUCT ||--|{ HANDLEIDING : bevat
-    PRODUCT ||--|{ TUTORIAL : bevat
     PRODUCT ||--o{ SOFTWARE_UPDATE : ontvangt
     PRODUCT ||--o{ AANBEVELING : krijgt
 
@@ -271,7 +270,6 @@ erDiagram
     GARANTIE }|--|| VERZEKERING : heeft_optie_op
 
     REPARATIE ||--|{ TRACKING : heeft
-    REPARATIE ||--o{ MEDIA_UPLOAD : bevat
 
     CHATGESPREK ||--o{ CHATBERICHT : bevat
     CHATGESPREK ||--o{ MEDEWERKER : met
@@ -290,6 +288,12 @@ erDiagram
         string email
         string wachtwoord
         date geboortedatum
+        -- gedrag --
+        registreerProduct()
+        meldReparatie()
+        geefFeedback()
+        schrijfPost()
+        wijzigInstelling()
     }
 
     PRODUCT {
@@ -300,12 +304,19 @@ erDiagram
         string IMEI
         date aankoopdatum
         string softwareversie
+        -- gedrag --
+        ontvangUpdate()
+        toonHandleiding()
+        genereerAanbeveling()
     }
 
     GARANTIE {
         int garantieID
         date startdatum
         date einddatum
+        -- gedrag --
+        verlengGarantie()
+        voegVerzekeringToe()
     }
 
     VERLENGING {
@@ -324,13 +335,9 @@ erDiagram
         string titel
         string taal
         text inhoud
-    }
-
-    TUTORIAL {
-        int tutorialID
-        string titel
-        string videolink
-        string taal
+        -- gedrag --
+        toonInhoud()
+        downloadHandleiding()
     }
 
     SOFTWARE_UPDATE {
@@ -338,6 +345,8 @@ erDiagram
         string versie
         string changelog
         date releasedatum
+        -- gedrag --
+        installeerUpdate()
     }
 
     REPARATIE {
@@ -345,12 +354,9 @@ erDiagram
         string status
         date meldingDatum
         string probleemomschrijving
-    }
-
-    MEDIA_UPLOAD {
-        int uploadID
-        string bestandstype
-        string bestandslocatie
+        -- gedrag --
+        updateStatus()
+        voegTrackingToe()
     }
 
     TRACKING {
@@ -358,29 +364,42 @@ erDiagram
         string status
         date updateDatum
         string opmerking
+        -- gedrag --
+        volgStatus()
     }
 
     CHATGESPREK {
         int gesprekID
         datetime starttijd
+        -- gedrag --
+        voegBerichtToe()
+        sluitGesprek()
     }
 
     CHATBERICHT {
         int berichtID
         datetime verzendtijd
         string inhoud
+        -- gedrag --
+        bewerkBericht()
+        verwijderBericht()
     }
 
     MEDEWERKER {
         int medewerkerID
         string naam
         string afdeling
+        -- gedrag --
+        reageerOpChat()
+        losProbleemOp()
     }
 
     FEEDBACK {
         int feedbackID
         int score
         text opmerking
+        -- gedrag --
+        analyseerFeedback()
     }
 
     COMMUNITY_POST {
@@ -388,24 +407,33 @@ erDiagram
         string titel
         text inhoud
         datetime datum
+        -- gedrag --
+        voegReactieToe()
+        bewerkPost()
     }
 
     REACTIE {
         int reactieID
         text inhoud
         datetime datum
+        -- gedrag --
+        bewerkReactie()
     }
 
     BADGE {
         int badgeID
         string naam
         string omschrijving
+        -- gedrag --
+        kenBadgeToe()
     }
 
     AANBEVELING {
         int aanbevelingID
         string type
         string promotietekst
+        -- gedrag --
+        toonAanbeveling()
     }
 
     ACCESSOIRE {
@@ -425,12 +453,16 @@ erDiagram
         int winkelID
         string naam
         string openingstijden
+        -- gedrag --
+        toonOpeningstijden()
     }
 
     SERVICECENTRUM {
         int centrumID
         string naam
         string openingstijden
+        -- gedrag --
+        planAfspraak()
     }
 
     INSTELLING {
@@ -438,6 +470,9 @@ erDiagram
         bool notificatiesAan
         string thema
         bool donkereMode
+        -- gedrag --
+        wijzigThema()
+        toggleDonkereMode()
     }
 
     NOTIFICATIE {
@@ -445,14 +480,17 @@ erDiagram
         string titel
         string inhoud
         datetime verzondenOp
+        -- gedrag --
+        markeerAlsGelezen()
     }
 
     TAALOPTIE {
         int taalID
         string taal
+        -- gedrag --
+        wijzigTaal()
     }
 ```
-
 
 ## Uml-klassendiagram
 
