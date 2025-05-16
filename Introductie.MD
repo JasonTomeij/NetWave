@@ -606,7 +606,7 @@ graph TD
     D2 --> D3[Probleem melden]
     D3 --> D4[FAQ]
 
-    %% Onderhoud sectie
+    %% Reparatie sectie
     E --> E1[Reparatie-status]
     E1 --> E2[Retouren]
 
