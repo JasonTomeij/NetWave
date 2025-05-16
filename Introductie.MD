@@ -579,9 +579,38 @@ classDiagram
 
 
 [Download de nieuwe Sitemap planning PDF](./Sitemap%20planning.pdf)
+```mermaid
+graph TD
+    A[Home / Dashboard] --> A1[Inloggen / aanmelden]
+
+    %% Verbindingen vanaf inloggen
+    A1 --> B[Shop]
+    A1 --> C[Over ons]
+    A1 --> D[Klantenservice]
+    A1 --> E[Onderhoud]
+    A1 --> F[Instellingen]
+
+    %% Shop sectie
+    B --> B1[Telefoons]
+    B1 --> B2[Wavebuds]
+    B2 --> B3[Accessoires]
+
+    %% Over ons sectie
+    C --> C1[Contacten]
+    C --> C2[Vestigingen]
+
+    %% Klantenservice sectie
+    D --> D1[Handleiding]
+    D --> D2[Chatbot]
+    D2 --> D3[Probleem melden]
+    D3 --> D4[FAQ]
+
+    %% Onderhoud sectie
+    E --> E1[Reparatie-status]
 
 
 [Download de Wireframes](./NetWave.pdf)
+```
 ## Wireframes
 
 [wireframe1](figma1.png)
