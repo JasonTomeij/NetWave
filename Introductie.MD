@@ -292,12 +292,16 @@ classDiagram
     class Verlenging {
         +int verlengingID
         +date nieuweEinddatum
+        --
+        +VerlengVerzekering()
     }
 
     class Verzekering {
         +int verzekeringID
         +string type
         +float premie
+        --
+        +ToonVerzekering()
     }
 
     class Handleiding {
@@ -411,6 +415,8 @@ classDiagram
         +string naam
         +string beschrijving
         +float prijs
+        --
+        +ToonAccesoires()
     }
 
     class Locatie {
