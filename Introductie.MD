@@ -333,15 +333,6 @@ classDiagram
         +voegTrackingToe()
     }
 
-    class Tracking {
-        +int trackingID
-        +string status
-        +date updateDatum
-        +string opmerking
-        --
-        +volgStatus()
-    }
-
     class Chatgesprek {
         +int gesprekID
         +datetime starttijd
