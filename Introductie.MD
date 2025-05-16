@@ -577,7 +577,7 @@ classDiagram
     Winkel --> "*" Afspraak
 ```
 
-###Sitemap
+### Sitemap
 
 ```mermaid
 graph TD
@@ -608,7 +608,7 @@ graph TD
     %% Onderhoud sectie
     E --> E1[Reparatie-status]
 
-
+---
 
 ```
 ## Wireframes
