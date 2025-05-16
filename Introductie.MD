@@ -578,7 +578,7 @@ classDiagram
 ```
 
 
-[Download de nieuwe Sitemap planning PDF](./Sitemap%20planning.pdf)
+
 ```mermaid
 graph TD
     A[Home / Dashboard] --> A1[Inloggen / aanmelden]
@@ -609,7 +609,7 @@ graph TD
     E --> E1[Reparatie-status]
 
 
-[Download de Wireframes](./NetWave.pdf)
+
 ```
 ## Wireframes
 
