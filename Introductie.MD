@@ -585,7 +585,7 @@ graph TD
     A[Home / Dashboard] --> A1[Inloggen / aanmelden]
 
     %% Verbindingen vanaf inloggen
-    A1 --> B[Shop]
+    A1 --> B[Accessoires]
     A1 --> C[Over ons]
     A1 --> D[Klantenservice]
     A1 --> E[Reparatie]
