@@ -621,7 +621,7 @@ graph TD
 ```
 ## Wireframes
 
-[Wireframes]()
+[Wireframes](NetWave wireframes.pdf)
 
 
 
