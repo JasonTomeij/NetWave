@@ -579,7 +579,7 @@ classDiagram
 ```
 
 ### Sitemap
-Dit is de sitemap van NetWave
+De sitemap laat zien hoe verschillende webpaginas met elkaar verbonden zijn. Dit kan je terugzien in onze versie van de Sitemap.
 
 ```mermaid
 graph TD
