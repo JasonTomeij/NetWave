@@ -250,59 +250,246 @@ Ook hebben we een online webshop waar de telefoons verkocht worden.
 
 ## Domeinmodel
 
-```mermaid
-erDiagram
-    KLANT ||--o{ PRODUCT : registreert
-    KLANT ||--o{ GARANTIE : heeft
-    KLANT ||--o{ REPARATIE : meldt
-    KLANT ||--o{ FEEDBACK : geeft
-    KLANT ||--o{ COMMUNITY_POST : schrijft
-    KLANT ||--o{ CHATGESPREK : start
-    KLANT ||--o{ INSTELLING : heeft
-    KLANT ||--o{ NOTIFICATIE : ontvangt
-    KLANT ||--o{ TAALOPTIE : gebruikt
-
-    PRODUCT ||--|{ HANDLEIDING : bevat
-    PRODUCT ||--o{ SOFTWARE_UPDATE : ontvangt
-    PRODUCT ||--o{ AANBEVELING : krijgt
-
-    GARANTIE }|--|| VERLENGING : heeft_optie_op
-    GARANTIE }|--|| VERZEKERING : heeft_optie_op
-
-    REPARATIE ||--|{ TRACKING : heeft
-
-    CHATGESPREK ||--o{ CHATBERICHT : bevat
-    CHATGESPREK ||--o{ MEDEWERKER : met
-
-    COMMUNITY_POST ||--|{ REACTIE : heeft
-    COMMUNITY_POST ||--o{ BADGE : verdient
-
-    AANBEVELING ||--|| ACCESSOIRE : betreft
-
-    LOCATIE ||--o{ WINKEL : heeft
-    LOCATIE ||--o{ SERVICECENTRUM : heeft
-
-    KLANT {
-        int klantID
-        string naam
-        string email
-        string wachtwoord
-        date geboortedatum
-        string methode_registreerProduct
-        string methode_meldReparatie
-        string methode_geefFeedback
-        string methode_schrijfPost
-        string methode_wijzigInstelling
+classDiagram
+    class Klant {
+        +int klantID
+        +string naam
+        +string email
+        +string wachtwoord
+        +date geboortedatum
+        --
+        +registreerProduct()
+        +meldReparatie()
+        +geefFeedback()
+        +schrijfPost()
+        +wijzigInstelling()
     }
 
-    PRODUCT {
-        int productID
-        string merk
-        string model
-        string serienummer
-        string IMEI
-        date aankoopdatum
-        string
+    class Product {
+        +int productID
+        +string merk
+        +string model
+        +string serienummer
+        +string IMEI
+        +date aankoopdatum
+        +string softwareversie
+        --
+        +ontvangUpdate()
+        +toonHandleiding()
+        +genereerAanbeveling()
+    }
+
+    class Garantie {
+        +int garantieID
+        +date startdatum
+        +date einddatum
+        --
+        +verlengGarantie()
+        +voegVerzekeringToe()
+    }
+
+    class Verlenging {
+        +int verlengingID
+        +date nieuweEinddatum
+    }
+
+    class Verzekering {
+        +int verzekeringID
+        +string type
+        +float premie
+    }
+
+    class Handleiding {
+        +int handleidingID
+        +string titel
+        +string taal
+        +text inhoud
+        --
+        +toonInhoud()
+        +downloadHandleiding()
+    }
+
+    class SoftwareUpdate {
+        +int updateID
+        +string versie
+        +string changelog
+        +date releasedatum
+        --
+        +installeerUpdate()
+    }
+
+    class Reparatie {
+        +int reparatieID
+        +string status
+        +date meldingDatum
+        +string probleemomschrijving
+        --
+        +updateStatus()
+        +voegTrackingToe()
+    }
+
+    class Tracking {
+        +int trackingID
+        +string status
+        +date updateDatum
+        +string opmerking
+        --
+        +volgStatus()
+    }
+
+    class Chatgesprek {
+        +int gesprekID
+        +datetime starttijd
+        --
+        +voegBerichtToe()
+        +sluitGesprek()
+    }
+
+    class Chatbericht {
+        +int berichtID
+        +datetime verzendtijd
+        +string inhoud
+        --
+        +bewerkBericht()
+        +verwijderBericht()
+    }
+
+    class Medewerker {
+        +int medewerkerID
+        +string naam
+        +string afdeling
+        --
+        +reageerOpChat()
+        +losProbleemOp()
+    }
+
+    class Feedback {
+        +int feedbackID
+        +int score
+        +text opmerking
+        --
+        +analyseerFeedback()
+    }
+
+    class CommunityPost {
+        +int postID
+        +string titel
+        +text inhoud
+        +datetime datum
+        --
+        +voegReactieToe()
+        +bewerkPost()
+    }
+
+    class Reactie {
+        +int reactieID
+        +text inhoud
+        +datetime datum
+        --
+        +bewerkReactie()
+    }
+
+    class Badge {
+        +int badgeID
+        +string naam
+        +string omschrijving
+        --
+        +kenBadgeToe()
+    }
+
+    class Aanbeveling {
+        +int aanbevelingID
+        +string type
+        +string promotietekst
+        --
+        +toonAanbeveling()
+    }
+
+    class Accessoire {
+        +int accessoireID
+        +string naam
+        +string beschrijving
+        +float prijs
+    }
+
+    class Locatie {
+        +int locatieID
+        +string stad
+        +string adres
+    }
+
+    class Winkel {
+        +int winkelID
+        +string naam
+        +string openingstijden
+        --
+        +toonOpeningstijden()
+    }
+
+    class Servicecentrum {
+        +int centrumID
+        +string naam
+        +string openingstijden
+        --
+        +planAfspraak()
+    }
+
+    class Instelling {
+        +int instellingID
+        +bool notificatiesAan
+        +string thema
+        +bool donkereMode
+        --
+        +wijzigThema()
+        +toggleDonkereMode()
+    }
+
+    class Notificatie {
+        +int notificatieID
+        +string titel
+        +string inhoud
+        +datetime verzondenOp
+        --
+        +markeerAlsGelezen()
+    }
+
+    class Taaloptie {
+        +int taalID
+        +string taal
+        --
+        +wijzigTaal()
+    }
+
+    %% Relaties
+    Klant --> Product : registreert
+    Klant --> Garantie : heeft
+    Klant --> Reparatie : meldt
+    Klant --> Feedback : geeft
+    Klant --> CommunityPost : schrijft
+    Klant --> Chatgesprek : start
+    Klant --> Instelling : heeft
+    Klant --> Notificatie : ontvangt
+    Klant --> Taaloptie : gebruikt
+
+    Product --> Handleiding : bevat
+    Product --> SoftwareUpdate : ontvangt
+    Product --> Aanbeveling : krijgt
+
+    Garantie --> Verlenging : heeft optie op
+    Garantie --> Verzekering : heeft optie op
+
+    Reparatie --> Tracking : heeft
+
+    Chatgesprek --> Chatbericht : bevat
+    Chatgesprek --> Medewerker : met
+
+    CommunityPost --> Reactie : heeft
+    CommunityPost --> Badge : verdient
+
+    Aanbeveling --> Accessoire : betreft
+
+    Locatie --> Winkel : heeft
+    Locatie --> Servicecentrum : heeft
 ```
 
 ## Uml-klassendiagram
