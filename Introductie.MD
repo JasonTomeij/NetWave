@@ -280,16 +280,6 @@ classDiagram
         +genereerAanbeveling()
     }
 
-class Retourneren {
-        +int retourID
-        +date retourDatum
-        +string reden
-        +string status
-        --
-        +verwerkRetour()
-        +beoordeelRetour()
-    }
-
     class Garantie {
         +int garantieID
         +date startdatum
