@@ -293,7 +293,7 @@ classDiagram
         +int verlengingID
         +date nieuweEinddatum
         --
-        +VerlengVerzekering()
+        +verlengVerzekering()
     }
 
     class Verzekering {
@@ -301,7 +301,7 @@ classDiagram
         +string type
         +float premie
         --
-        +ToonVerzekering()
+        +toonVerzekering()
     }
 
     class Handleiding {
@@ -416,7 +416,7 @@ classDiagram
         +string beschrijving
         +float prijs
         --
-        +ToonAccesoires()
+        +toonAccesoires()
     }
 
     class Locatie {
@@ -469,8 +469,6 @@ classDiagram
 
     %% Relaties
     Klant --> Product : registreert
-    Klant --> Garantie : heeft
-    Klant --> Reparatie : meldt
     Klant --> Feedback : geeft
     Klant --> CommunityPost : schrijft
     Klant --> Chatgesprek : start
@@ -481,11 +479,14 @@ classDiagram
     Product --> Handleiding : bevat
     Product --> SoftwareUpdate : ontvangt
     Product --> Aanbeveling : krijgt
+    Product --> Garantie : heeft
+    Product --> Reparatie : heeft
+    Product --> Verzekering : heeft
+    Product --> Tracking : heeft
 
-    Garantie --> Verlenging : heeft optie op
-    Garantie --> Verzekering : heeft optie op
+    Garantie --> Verlenging : optie op
 
-    Reparatie --> Tracking : heeft
+    Reparatie --> Tracking : bevat
 
     Chatgesprek --> Chatbericht : bevat
     Chatgesprek --> Medewerker : met
