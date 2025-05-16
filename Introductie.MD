@@ -608,6 +608,13 @@ graph TD
 
     %% Onderhoud sectie
     E --> E1[Reparatie-status]
+    E1 --> E2[Retouren]
+
+    %% Instellingen sectie
+    F --> F1[Taal]
+    F --> F2[Meldingen]
+    F2 --> F3[Lightmode / Darkmode]
+
 
 
 
