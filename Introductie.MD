@@ -624,5 +624,5 @@ graph TD
 
 [Wireframes](NetWave%20wireframes.pdf)
 
-
+Door middel van de wireframes krijg je een goed overzicht over de webpagina's van de applicatie.
 
