@@ -250,7 +250,7 @@ Ook hebben we een online webshop waar de telefoons verkocht worden.
 
 ## Domeinmodel
 
-mermaid
+```mermaid
 erDiagram
     KLANT ||--o{ PRODUCT : registreert
     KLANT ||--o{ GARANTIE : heeft
