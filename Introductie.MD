@@ -473,7 +473,7 @@ classDiagram
     Product --> Garantie : heeft
     Product --> Reparatie : heeft
     Product --> Verzekering : heeft
-    Product --> Tracking : heeft
+    Product --> retourneren : optie
 
     Garantie --> Verlenging : optie op
 
