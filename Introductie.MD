@@ -249,7 +249,7 @@ Ook hebben we een online webshop waar de telefoons verkocht worden.
 
 
 ## Domeinmodel
-
+```
 classDiagram
     class Klant {
         +int klantID
