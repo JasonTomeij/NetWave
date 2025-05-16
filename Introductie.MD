@@ -202,8 +202,53 @@ Voor het gewenste situatie(soll) hoort een passend geïntegreerd systeem dat erv
 
 ![Product Vision Board](Documenten/Foto's/product-vision-board.png)
 
-## Domeinmodel
 
+## Target group
+
+Het doelgroep van ons bedrijf zijn jong volwassenen en volwassenen. Wij hebben hiervoor gekozen om een klant voor leven te hebben.
+Wij hopen door ons te focussen op bedrijven de volwassenen aan te spreken. Zo willen wij ervoor zorgen dat we zowel bij bedrijven als volwassenen bekend zijn met ons merk.
+
+## Needs
+
+Met de sdg's die wij gekozen hebben willen wij een duurzaam merk zijn. Zo hebben wij bijvoorbeeld een verplichte duurzaamheidstrainingen. Ook werken we met fabrikanten die duurzaame materialen gebruiken. Ook prioriteren wij kwalliteit in ons product. Daar hebben wij voor gekozen omdat wij klanten tevreden willen houden over ons product. Daarmee houden we trouwe klanten.
+
+## Product
+
+In ons bedrijf verkopen wij telefoons en oortjes.
+Zoals eerder vermeld zijn wij dus gefocust op de kwaliteit van onze product en zitten wij op 5 sterren kwaliteit. 
+
+## Business goals
+
+Ook onze business goals zijn dus gericht op duurzaamheid en kwaliteit.
+De productie van ons telefoon is dus gericht op de duurzaamheid door de materiaal die we gebruiken. Doordat we dus focussen op kwaliteit willen wij er voor zorgen dat ons product meer bekend staat om de kwaliteit dan het merk zelf.
+
+## Competitors
+
+Onze concurenten zijn dus andere telefoonedrijven zoals Telenova. Zo heb je er meerdere. 
+
+Het voordeel van onze concurenten is dat hun meer omzet draaien aangezien de meeste zijn gefocust op de prijs. Daar hebben ze een voorsprong op. 
+
+Het voordeel dat wij hebben is dat meerdere bedrijven zijn gefocust op de prijs en niet op de kwaliteit. Wij zijn dus een van de weinige die in deze markt zitten. 
+
+
+## Revenue streams
+
+Door de juiste doelgroep te kiezen en te benaderen willen wij vaste klanten hebben. Dit zorgt er voor dat we een standaard inkomen hebben. Klanttevredenheid speelt ook een belangrijke rol hierin. Door het tevreden houden van onze klanten kunnen we er voor zorgen dat onze klanten dus terugkomen bij ons.
+
+## Cost factors
+
+Marketing is een van onze basiskosten. Wij willen ervoor zorgen dat ons product bekend staat om de kwaliteit. Om dat te bereiken moeten we reclame maken voor ons product.
+
+Het inkopen van materialen voor onze telefoons is ook onderdeel van de basiskosten.
+
+## Channels
+
+Wij zijn als Netwave bevestigd in meerdere landen en willen dit uitbreiden naar meerdere. Zo kunnen we ook ons product bekender maken. 
+
+Ook hebben we een online webshop waar de telefoons verkocht worden.
+
+
+## Domeinmodel
 
 ```mermaid
 erDiagram
