@@ -621,18 +621,7 @@ graph TD
 ```
 ## Wireframes
 
-[wireframe1](figma1.png)
-[wireframe2](figma2.png)
-[wireframe3](figma3.png)
-[wireframe4](figma4.png)
-[wireframe5](figma6.png)
-[wireframe6](figma7.png)
-[wireframe7](figma8.png)
-[wireframe8](figma9.png)
-[wireframe9](figma10.png)
-[wireframe10](figma11.png)
-[wireframe11](figma12.png)
-[wireframe12](figma13.png)
+
 
 
 
