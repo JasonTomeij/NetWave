@@ -622,7 +622,6 @@ graph TD
 ```
 ## Wireframes
 
-[Wireframes](NetWave%20wireframes.pdf)
 [Wireframes](NetWave%20(3).pdf)
 
 Door middel van de wireframes krijg je een goed overzicht over de webpagina's van de applicatie.
